@@ -7,6 +7,7 @@
     <title>olivia matvejeva</title>
     <link rel="stylesheet" href="dist/styles.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     
@@ -23,7 +24,38 @@
         </div>  
         </div>
         </section>
+ <div class="swiper-slide flex justify-center">
+  <div class="bg-white rounded-2xl shadow-lg p-6 w-64 flex flex-col items-center">
+    <!-- Profile Image -->
+    <img src="images/1.jpg" alt="profile"
+         class="w-24 h-24 rounded-full object-cover mb-4">
 
+    <!-- Name & Job -->
+    <div class="text-center">
+      <h3 class="text-lg font-semibold">Ally Pearson</h3>
+      <p class="text-sm text-gray-500">Web Developer</p>
+    </div>
+
+    <!-- Rating -->
+    <div class="flex space-x-1 mt-3 text-yellow-400">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-4 flex space-x-3">
+      <button class="px-3 py-1 bg-blue-500 text-white text-sm rounded-lg hover:bg-blue-600">
+        About Me
+      </button>
+      <button class="px-3 py-1 bg-green-500 text-white text-sm rounded-lg hover:bg-green-600">
+        Hire Me
+      </button>
+    </div>
+  </div>
+</div>
         
         <div class="bg-[#d5b893] flex flex-row p-5 space-x-3 top-0 sticky  w-screen"> 
        
@@ -49,7 +81,19 @@
             <p> 
                 portfolio highlights 
             </p> 
+             <div class="swiper mySwiper container">
+             <div class="swiper-wrapper content" id="slide-container">
+                <!--card injection should be here-->
+               
+
+                </div>
+                 </div>
+                  <div class="swiper-button-next"></div>
+                   <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
            
+        
+        
         </div>
         </section>
 
@@ -86,7 +130,8 @@
         </div>
 
     </footer>
-
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="./swiper_script.js"></script>
    
   </body>
 </html> 

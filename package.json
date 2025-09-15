@@ -1,1 +1,17 @@
-{"type":"module","scripts":{"build":"postcss styles.css -o dist/styles.css","watch":"postcss styles.css -o dist/styles.css --watch"},"dependencies":{"@tailwindcss/postcss":"^4.1.11","postcss-cli":"^11.0.1"},"devDependencies":{"autoprefixer":"^10.4.21","postcss":"^8.5.6","tailwindcss":"^4.1.13"}}
+{
+  "type": "module",
+  "scripts": {
+    "init": "tailwindcss init",
+    "build": "postcss styles.css -o dist/styles.css",
+    "watch": "postcss styles.css -o dist/styles.css --watch"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "postcss-cli": "^11.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13"
+  }
+}

@@ -4,7 +4,6 @@ fetch("cards.html")
     const container = document.getElementById("slide-container");
     container.innerHTML = data;
 
-
     new Swiper(".mySwiper", {
       slidesPerView: 1,
       slidesPerGroup: 1,

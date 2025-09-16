@@ -28,46 +28,6 @@
 
 <!-- test cards here -->
 
- <div class="swiper-slide flex justify-center">
-  <div class="bg-white rounded-2xl shadow-lg p-6 w-[75vw] h-[70vh] overflow-auto flex flex-col md:flex-row items-center place-self-center">
-    <!-- Profile Image -->
-    <img src="files/Hostile Architecture.jpg" alt="Hostile Architecture Infographic"
-         class=" object-cover  w-[40vw] m-10">
-
-    <!-- Name & Job -->
-    <div class="text-left">
-      <h3 class="text-lg font-semibold place-self-center">Hostile Architecture</h3>
-      <p class="text-sm text-gray-500 w-[25vw]">
-        This project was an exploration of the <b>hostile architecture</b> we encounter on a daily basis, and how it discourages certain acts or behaviors in public areas. We were challenged to analyze hostile architecture and its exclusive intents and create a human-centred, innovative design to aid and reclaim public spaces for the community’s well-being. 
-        We were challenged to create a prototype for the intended space and show how it would aid the community. 
-
-      </p>
-    </div>
-  </div>
-</div>
-
-<div class="swiper-slide flex justify-center">
-  <div class="bg-white rounded-2xl shadow-lg p-6 w-[75vw] h-[70vh] overflow-auto flex flex-col md:flex-row items-center place-self-center">
-    <!-- Profile Image -->
-    <div class="flex flex-col overflow-auto "> 
-    <img src="files/project 3Artboard 1.jpg" alt="Community Garden"
-         class=" object-cover  w-[40vw] m-10">
-     <img src="files/project 3Model.jpg" alt="Garden Model"
-         class=" object-cover  w-[40vw] m-10">
-      </div> 
-    <!-- Name & Job -->
-    <div class="text-left">
-      <h3 class="text-lg font-semibold place-self-center">Hostile Architecture</h3>
-      <p class="text-sm text-gray-500 w-[25vw]">
-        This project was an exploration of the <b>hostile architecture</b> we encounter on a daily basis, and how it discourages certain acts or behaviors in public areas. We were challenged to analyze hostile architecture and its exclusive intents and create a human-centred, innovative design to aid and reclaim public spaces for the community’s well-being. 
-        We were challenged to create a prototype for the intended space and show how it would aid the community. 
-
-      </p>
-    </div>
-  </div>
-</div>
-
-
 
         
         <div class="bg-[#d5b893] flex flex-row p-5 space-x-3 top-0 sticky  w-[80vw] place-self-center rounded-full mt-8 mb-8 "> 
@@ -89,33 +49,33 @@
         </div> 
         
 
-        <section> 
-        <div  class ='h-[75vh] w-[80vw] bg-[#f7ecdc] place-self-center rounded-2xl'> 
-           
-             <div class="swiper mySwiper container">
-             <div class="swiper-wrapper content flex justify-center" id="slide-container">
-                <!--card injection should be here-->
-               
-
-                </div>
-                 </div>
-                  <div class="swiper-button-next"></div>
-                   <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-           
-        
-        
-        </div>
-        </section>
-
         <section>
-        <div class ='h-[75vh]'>
+  <div class="h-[75vh] w-[80vw] bg-[#f7ecdc] mx-auto rounded-2xl">
+    <div class="swiper mySwiper h-full">
+      <div class="swiper-wrapper" id="slide-container">
+        <!-- Cards will be injected here -->
+      </div>
+
+      <!-- Swiper navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+        
+        <section>
+          <button id="tabButton" class="  px-4 py-2 rounded hover:bg-green-600 focus:outline-none w-64 text-left">
+        About Me 
+        </button>
+        <div  id = "tabContent" class ='h-[75vh] mt-2 p-4 hidden'>
             <p>
                 About me 
             </p>
         </div>
-        </section>
-        
+        </section>      
     </main>
 
     
@@ -143,6 +103,14 @@
     </footer>
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  <script src="./swiper_script.js"></script>
+ <script>
+  const tabButton = document.getElementById("tabButton");
+  const tabContent = document.getElementById("tabContent");
+
+  tabButton.addEventListener("click", () => {
+    tabContent.classList.toggle("hidden"); // Tailwind way to show/hide
+  });
+</script>
    
   </body>
 </html> 

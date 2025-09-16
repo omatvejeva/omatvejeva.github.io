@@ -14,18 +14,38 @@
     <main>
         <section > 
         <div class = 'bg-[#fdf0d5] h-[75vh] w-screen '> 
-            <div class="flex flex-row place-self-center "> 
-            <p >
-            hello my name is olivia <br> 
-            this is my portfolio <br> 
-            insert more info about portfolio / sections 
-            </p>
-            <img class ="size-24" src ="files/Profile_Picture.png" alt='profile picture' > 
-        </div>  
+          <div class="flex flex-col  items-center justify-center flex-wrap "> 
+            <h3 style="text-align: center;" class="text-lg text-center mt-8 mb-8" >
+            Hello <br> my name is Olivia 
+            </h3>
+            <img style="width: 30vh; max-height: 30vh;" class ="" src ="files/Profile_Picture.png" alt='profile picture' > 
+           <div style="width: 50vw; height: 25vh;" class=" overflow-scroll text-gray-500 mt-2 p-4"> 
+            
+               this is my portfolio 
+               insert more info about portfolio / sections 
+               this is my portfolio 
+               insert more info about portfolio / sections '
+               this is my portfolio 
+               insert more info about portfolio / sections 
+               this is my portfolio 
+               insert more info about portfolio / sections '
+               this is my portfolio 
+               insert more info about portfolio / sections 
+               this is my portfolio 
+               insert more info about portfolio / sections 
+               this is my portfolio 
+               insert more info about portfolio / sections 
+               this is my portfolio 
+               insert more info about portfolio / sections 
+           
+            </div>
+          </div>  
         </div>
         </section>
 
 
+
+       
 <!-- test cards here -->
 
 
@@ -33,18 +53,18 @@
         <div class="bg-[#d5b893] flex flex-row p-5 space-x-3 top-0 sticky  w-[80vw] place-self-center rounded-full mt-8 mb-8 "> 
        
             
-            <a href ="#static"> 
+            <button id="GoToStatic"> 
             static designs
-        </a>
-         <a href="#UI">
+            </button>
+         <Button   id ="GoToUI">
             UI/UX
-        </a>
-        <a href="case">
+         </Button>
+        <button id="GoToCase">
             case studies 
-        </a>
-        <a href="#coding">
+        </button>
+        <button id="GoToCoding">
             coding 
-        </a> 
+        </button> 
 
         </div> 
         
@@ -52,13 +72,13 @@
         <section>
   <div class="h-[75vh] w-[80vw] bg-[#f7ecdc] mx-auto rounded-2xl">
     <div class="swiper mySwiper h-full">
-      <div class="swiper-wrapper" id="slide-container">
+      <div class="swiper-wrapper  items-center" id="slide-container">
         <!-- Cards will be injected here -->
       </div>
 
-      <!-- Swiper navigation -->
+      <!-- Swiper navigation --> 
       <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-prev"></div> 
       <div class="swiper-pagination"></div>
     </div>
   </div>

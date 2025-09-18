@@ -26,7 +26,7 @@ fetch("cards.html")
     const goToCoding = document.getElementById("GoToCoding")
     
     goToStatic.addEventListener('click', function(){
-      swiper.slideTo(1,800)
+      swiper.slideTo(0,800)
     }); 
 
     goToUIUX.addEventListener('click', function(){
@@ -38,7 +38,7 @@ fetch("cards.html")
     }); 
 
     goToCoding.addEventListener('click', function(){
-      swiper.slideTo(0,800)
+      swiper.slideTo(5,800)
     }); 
 
   });

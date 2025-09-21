@@ -30,38 +30,52 @@
     <section>
         <div class="bg-[#d7e0ec] w-screen h-[35vh]">
         <div class = 'ml-[10%] pt-[5%]'>
-        <div>
+        <div class="flex flex-row" >
+        <div class="flex flex-col">
             <h5 class="text-xl font-semibold">Skills </h5>
-           Web Development
-            Web Design
-            Mobile Design 
-            FastAPI
-            Android Studios 
-            VS Code
-            QT Creator           
-            Django
+            <div> Web Development </div>
+            <div> Web Design </div>
+            <div>  Mobile Design </div>
+            <div> FastAPI </div> 
+            <div>  Android Studios </div>
+            <div> VS Code</div>
+            <div> QT Creator   </div>
+            <div>Django </div>         
         </div>
         <div >
             <h5 class="text-xl font-semibold"> Tools </h5>
-             Figma
-            Photoshop
-            Illustrator
-            Github
-            Tableau
+            <div>Figma </div>
+             <div> Photoshop</div>
+             <div> Illustrator </div>
+             <div>Github </div>
+             <div>Tableau </div>
+            
         </div>
         <div>
             <h5 class="text-xl font-semibold"> Programing Languages</h5>
-            Python
-            Java
-            SQL
-            HTML
-            CSS
-            Tailwind
-            C++
-            JavaScript
-            C#
-            Kotin
-            Swift
+             <div>Python </div>
+
+             <div> Java </div>
+           
+             <div> SQL</div>
+            
+             <div>HTML </div>
+            
+             <div>CSS </div>
+            
+             <div>  Tailwind </div>
+          
+             <div>C++ </div>
+            
+             <div> JavaScript </div>
+           
+             <div>C# </div>
+        
+             <div>Kotin </div>
+            
+             <div>Swift </div>
+            
+        </div>
         </div>
         </div>
         </div>
@@ -78,19 +92,40 @@
                  Coding </button>
         </div>
             
-        <div id="uiSection" class="bg-[#f0c4ff] w-[85vw] h-[80%] mx-auto rounded-2xl">
-           <div class="">
-           
+        <div id="uiSection" class="bg-[#f0c4ff] w-[85vw] h-[80%] mx-auto rounded-2xl overflow-auto">
+           <div class="bg-[#ffffff] shadow-lg  w-[95%] h-[60%] my-[3%] mx-auto rounded-3xl">
+            <p class="pl-[3%] pt-[2%] font-bold text-xl"> 2025</p>
+            <h3 class="pl-[3%] pt-[1%] text-4xl font-semibold">
+               Portfolio Redesign 
+            </h3>
+           <p class="pl-[3%] pt-[5%] text-gray-600">
+                redesigning my portfolio after being told it sucks by my design teacher <br>
+                redoing it to make it look better <br> 
+                i also have nothing to put this so here is my experience 
+           </p>
+           <button id="portfolioRedesign" class=""> learn more </button>
+           <div id="fullRedesign" class="bg-amber-200 hidden">
+                working on this 
+           </div>
+           </div>
+           <div class="bg-[#ffffff] shadow-lg  w-[95%] h-[60%] my-[3%] mx-auto rounded-3xl">
             <h3>
-                ui ux section 
+               Portfolio Redesign 
             </h3>
             ui ux section 
            </div>
         </div>
 
-        <div id="codingSection" class="bg-[#b8f4c1] hidden  w-[85vw] h-[80%] mx-auto rounded-2xl">
-            <h3> coding section </h3>
-            coding section 
+        <div id="codingSection" class="bg-[#b8f4c1] hidden  w-[85vw] h-[80%] mx-auto rounded-2xl overflow-auto">
+            <div class="bg-[#ffffff] shadow-xl w-[95%] h-[50%] my-[3%] mx-auto rounded-3xl">
+                <h3 class="pl-[3%] pt-[1%] text-2xl font-semibold"> Portfolio </h3>
+                <p class="pl-[3%] pt-[5%] text-gray-600">
+                    Built with HTML, Tailwind, and Javascript
+
+                </p>
+
+            </div>
+            
         </div>
         
         </div>
@@ -147,6 +182,13 @@
             codingSection.classList.remove("hidden"); 
             uiSection.classList.add("hidden"); 
         }); 
+
+        const portfolioRedesignButton = document.getElementById("portfolioRedesign");
+        const fullRedesignSection = document.getElementById("fullRedesign");
+
+        portfolioRedesignButton.addEventListener("click", () => {
+            fullRedesignSection.classList.toggle("hidden"); 
+        });
 
 
     </script>

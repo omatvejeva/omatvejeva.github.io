@@ -11,9 +11,9 @@
   </head>
   <body>
     <section>
-        <div class = 'bg-[#cecece] h-[75vh] w-screen '> 
+        <div class = 'bg-[#f3f2f2] h-[75vh] w-screen '> 
         <div class="flex flex-col   "> 
-            <h1 class = 'text-9xl font-bold mt-[10%] ml-[10%]'>
+            <h1 class = 'text-[clamp(3rem,8vw,8rem)] font-bold mt-[5rem] ml-[10%]'>
                 OLIVIA <br>  MATVEJEVA
             </h1>
             <!-- add cover photo with prof. headshot -->
@@ -28,16 +28,40 @@
     </section>
 
     <section>
-        <div class="bg-[#bbc9db] w-screen h-[35vh]">
-        <div class = 'ml-[10%]'>
+        <div class="bg-[#d7e0ec] w-screen h-[35vh]">
+        <div class = 'ml-[10%] pt-[5%]'>
         <div>
-            <h5>skills </h5>
+            <h5 class="text-xl font-semibold">Skills </h5>
+           Web Development
+            Web Design
+            Mobile Design 
+            FastAPI
+            Android Studios 
+            VS Code
+            QT Creator           
+            Django
+        </div>
+        <div >
+            <h5 class="text-xl font-semibold"> Tools </h5>
+             Figma
+            Photoshop
+            Illustrator
+            Github
+            Tableau
         </div>
         <div>
-            <h5> tools </h5>
-        </div>
-        <div>
-            <h5> prog languages</h5>
+            <h5 class="text-xl font-semibold"> Programing Languages</h5>
+            Python
+            Java
+            SQL
+            HTML
+            CSS
+            Tailwind
+            C++
+            JavaScript
+            C#
+            Kotin
+            Swift
         </div>
         </div>
         </div>
@@ -46,15 +70,33 @@
     <section>
         <div class="bg-[#ffffff] h-screen w-screen" > 
         <div class="flex flex-row justify-center items-center">
-            <h2> UI/UX </h2>
-            <h2> coding </h2>
+
+            <button id="ui" class="bg-[#f0afff] p-2 rounded-2xl m-4 text-2xl"> 
+                UI/UX</button>
+
+            <button id="coding" class="bg-[#b0ffd5] p-2 rounded-2xl m-4 text-2xl">
+                 Coding </button>
         </div>
             
+        <div id="uiSection" class="bg-[#f0c4ff] w-[85vw] h-[80%] mx-auto rounded-2xl">
+           <div class="">
+           
+            <h3>
+                ui ux section 
+            </h3>
+            ui ux section 
+           </div>
+        </div>
+
+        <div id="codingSection" class="bg-[#b8f4c1] hidden  w-[85vw] h-[80%] mx-auto rounded-2xl">
+            <h3> coding section </h3>
+            coding section 
+        </div>
         
         </div>
     </section>
 
-    <section>
+    <section class="bg-[#ffffff] h-[80vh]">
         <div class="h-[75vh] w-[80vw] bg-[#f0f0f0] mx-auto rounded-2xl">
           <div class="swiper mySwiper h-full">
             <div class="swiper-wrapper  items-center" id="slide-container">
@@ -68,11 +110,42 @@
         </div>
         </section>
 
-    <footer class="bg-[#b0bdc2] h-[40vh] ">
-        <div class="ml-[10%]">
-            <h3> Contact me </h3>
-            insert resume and stuff 
+    <footer class="bg-[#dee4ec] h-[40vh] ">
+        <div class="ml-[10%] pt-[5%]">
+            <h3 class="text-4xl"> Contact me </h3>
+            
+            <div class = 'flex flex-col pt-[2%] text-xl pl-[1%] gap-1'>
+            <a href="&#x6D;&#x61;ilto&#58;olivi&#x61;m&#x61;tv&#x61;n&#64;gmail&#46;com" class="hover:underline">Email Me</a>
+        
+            <a href="https://www.linkedin.com/in/olivia-matvejeva-63b29629a/"class="hover:underline">LinkedIn</a>
+
+            <a href="https://github.com/omatvejeva" class="hover:underline"> Github</a>
+
+            <a href="files/Resume ATS copy.pdf" download="Olivia Matvejeva Resume" class = "hover:underline"> 
+                Download My Resume 
+            </a>
+        </div>
         </div>
     </footer>
+
+    <script>
+        const uiButton = document.getElementById("ui"); 
+        const codingButton = document.getElementById("coding"); 
+
+        uiButton.addEventListener("click", () =>{
+            uiSection.classList.remove("hidden"); 
+            codingSection.classList.add("hidden"); 
+            
+        }); 
+
+        codingButton.addEventListener("click", () =>{
+            codingSection.classList.remove("hidden"); 
+            uiSection.classList.add("hidden"); 
+        }); 
+
+
+    </script>
+
+
     </body>
 </html>

@@ -10,36 +10,203 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
-    
-    <main>
-        <section > 
-        <div class = 'bg-[#fdf0d5] h-[75vh] w-screen '> 
-          <div class="flex flex-col  items-center justify-center flex-wrap "> 
-            <h3 style="text-align: center;" class="text-m text-center mt-8 mb-8 " >
-            <b class="font-mono text-2xl">Hello </b> <br> My Name is <br> <span class="font-mono text-lg">Olivia Matvejeva</span>
-            </h3>
-            <img style="width: 30vh; max-height: 30vh;" class ="" src ="files/Profile_Picture.png" alt='profile picture' > 
-           <div style="width: 50vw; height: 25vh;" class="bg-[#fff9ed] rounded-2xl overflow-scroll text-gray-500 mt-2 p-4"> 
+    <section>
+        <div class = 'bg-[#f3f2f2] h-[75vh] w-screen '> 
+        <div class="flex flex-col   "> 
+            <h1 class = 'text-[clamp(3rem,8vw,8rem)] font-bold mt-[5rem] ml-[10%]'>
+                OLIVIA <br>  MATVEJEVA
+            </h1>
+            <!-- add cover photo with prof. headshot -->
+           <div style="width: 48vw; height: 20vh;" class="bg-[#ebebeb] rounded-2xl overflow-scroll text-gray-500 mt-2 p-4  ml-[11%]"> 
             I am an aspiring UI/UX Developer and a junior student at the University of Utah, pursuing a degree in Software Development with minors in Design and Art Technology. I focus on creating a seamless and pleasant experience in technology.  
             This portfolio is to show off both personal passion projects and school work, highlighting the skills I have learned.
             <br> Find my contact and resume below
             </div>
           </div>  
+      
         </div>
-        </section>
-        <a href = '/redesign.html'> new layout </a>
+    </section>
 
-<!-- test cards here -->
-
-        <div class="sticky top-0 z-50 bg-[#e3c6a0] flex flex-row p-5 space-x-3 w-[80vw] mx-auto rounded-full mt-8 mb-8">
-          <button id="GoToStatic" class = "hover:underline hover:bg-[#f7ecdc] hover:rounded-full">Static Designs</button>
-          <button id="GoToUI" class = "hover:underline">UI/UX</button>
-          <button id="GoToCase" class = "hover:underline">Case Studies</button>
-          <button id="GoToCoding" class="font-mono hover:bg-[#98acd0] hover:underline hover:rounded-full ">Coding</button>
+    <section>
+        <div class="bg-[#d7e0ec] w-screen ">
+        <div class = 'ml-[10%] pt-[3%] pb-[3%]'>
+        <div style="display: flex; flex-direction: row; gap: 5%; padding-bottom: 3%;">
+            <div class="flex flex-col">
+                <h5 class="text-xl font-semibold">Skills </h5>
+                <div> Web Development </div>
+                <div> Web Design </div>
+                <div>  Mobile Design </div>
+                <div> FastAPI </div> 
+                <div>  Android Studios </div>
+                <div> VS Code</div>
+                <div> QT Creator   </div>
+                <div>Django </div>         
+            </div>
+            <div >
+                <h5 class="text-xl font-semibold"> Tools </h5>
+                <div>Figma </div>
+                <div> Photoshop</div>
+                <div> Illustrator </div>
+                <div>Github </div>
+                <div>Tableau </div>
+            </div>
+            <div>
+                <h5 class="text-xl font-semibold"> Programing Languages</h5>
+                <div>Python </div>
+                <div> Java </div>
+                <div> SQL</div>
+                <div>HTML </div>
+                <div>CSS </div>
+                <div>  Tailwind </div>
+                <div>C++ </div>
+                <div> JavaScript </div>
+                <div>C# </div>
+                <div>Kotin </div>
+                <div>Swift </div>
+            </div>
         </div>
+        </div>
+        </div>
+    </section>
 
-        <section>
-        <div class="h-[75vh] w-[80vw] bg-[#f7ecdc] mx-auto rounded-2xl">
+    <section>
+        <div class="bg-[#ffffff] h-screen w-screen" > 
+        <div class="flex flex-row justify-center items-center">
+
+            <button id="ui" class="bg-[#f0afff] p-2 rounded-2xl m-4 text-2xl"> 
+                UI/UX</button>
+
+            <button id="coding" class="bg-[#b0ffd5] p-2 rounded-2xl m-4 text-2xl">
+                 Coding </button>
+        </div>
+            
+        <div id="uiSection" class="bg-[#f0c4ff] w-[85vw] h-[80%] mx-auto rounded-2xl overflow-auto">
+           <div class="bg-[#ffffff] shadow-lg  w-[95%] h-[50%] my-[3%] mx-auto rounded-3xl">
+            <p class="pl-[3%] pt-[2%] font-bold text-xl"> 2025</p>
+            <h3 class="pl-[3%] pt-[1%] text-4xl font-semibold">
+               Portfolio Redesign 
+            </h3>
+           <p class="pl-[3%] pt-[5%]  text-gray-600">
+                Redesigning my portfolio and what I learned in the process 
+           </p>
+           <button id="portfolioRedesign" style="margin-left: 3%; padding: 1%; margin-top: 1%; margin-bottom: 1%;" class=" bg-[#d7e0ec]   rounded-2xl "> learn more </button>
+           <div id="fullRedesign" class=" bg-white hidden ">
+               
+                <div class="flex flex-col ">
+
+                    <h3 style="padding-left: 5%; padding-top: 3%; padding-bottom: 3%;" class="text-xl text-black"> 
+                        Phase 0: Talking to a Design Professor </h3>
+                        <a style="padding-left: 5%; padding-bottom: 1%;" class="text-gray-500 text-xl hover:underline" href="old_design.html">Old Design </a>
+                    <p style="padding-left: 5%; padding-right: 10%; padding-bottom: 5%;"class=" text-gray-600"> 
+                        Upon creating my first iteration of this portfolio and proudly showing it off to my friends 
+                        and a few professors, I showed it to my design professor and she gave me some hard advice 
+                        that I needed to hear. She was impressed that I had coded it myself but she said that it 
+                        was average and ok for a student. This did not feel nice in the moment but I did need to 
+                        hear that. I got some recommendations and she talked me through what would make a better UI/UX portfolio. 
+
+                    </p>
+                    <div class="flex flex-row">
+                        <img src="files/Research.jpg" alt="Phase 1 Research other portfolios" 
+                        style="padding-left: 5%;"
+                        class="object-contain max-h-[60vh] w-[40vw] md:w-[80vw] border-2 border-black">
+                        
+
+                        <div class="flex flex-col pl-[3%] ">
+                        <h3 class="text-xl text-black"> Phase 1 : Research</h3>
+                        <p  class=" text-gray-600">
+                            Taking the advice and examples I was given as well as finding more examples online,
+                            I sat down and noted what I liked and the aesthetics of the portfolios I looked at.
+                             From there I created a mind map of what I wanted to include in my portfolio. 
+                        </p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row">
+                     <div class="flex flex-col pl-[3%] pr-[3%] ">
+                        <h3 class="text-xl text-black"> Phase 2 : White Board drawing </h3>
+                        <p class=" text-gray-600">
+                            After I had an idea of the sections I wanted to add into my portfolio,
+                             I drew out a sketch on a whiteboard to better visualize the flow. 
+                        </p>
+                         <h2 class="text-xl text-black pt-[5%] pr-[3%]"> Phase 2.5: Revise </h2>
+                        <p class=" text-gray-600"> Having a whiteboard sketch, I was able to talk to my peers and walk 
+                            through what I was imagining. Their input helped me revise until I felt happy with my idea.
+                        </p>
+                     </div>
+                     <img  style="padding-right: 3%;" src="files/whiteboard.JPG" alt="whiteboard drawing of the layout " class="object-contain max-h-[60vh] w-[40vw] md:w-[80vw] ">
+                    </div>
+
+                    <div style="padding-left: 5%; padding-bottom: 5%; padding-right: 10%;">
+                        
+                       
+                        <h2 class="text-xl text-black"> Phase 3: Code </h2>
+                        <p class=" text-gray-600">
+                        After I had a solid plan of what I was gonna make, all that was left was to code it. 
+                        I opened a new file and started to code. Starting out with a basic framework and from
+                         there filing in sections and styling as needed. 
+                        </p>
+                    </div>
+                    
+
+                </div>
+
+           </div>
+           </div>
+
+           
+           
+        </div>
+        
+
+        <div id="codingSection" class="bg-[#b8f4c1] hidden  w-[85vw] h-[80%] mx-auto rounded-2xl overflow-auto">
+            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+                <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Portfolio </h3>
+                <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
+                    Built with <code>HTML,Tailwind,</code> and  <code> Javascript </code>
+                </p>
+                <a href="https://github.com/omatvejeva/omatvejeva.github.io"
+                style="padding-left: 5%; padding-top: 5%;" class = "mt-[3%] hover:underline text-[#6383d3]"> github repo </a>
+
+            </div>
+
+            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+                <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Spreadsheet Application </h3>
+                <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
+                    Built with <code> C# </code> and <code>  MAUI </code> GUI 
+                </p>
+                
+            </div>
+
+            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+                <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Online Classroom Website  </h3>
+                <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
+                    Built with <code>HTML,CSS,Python,Django</code> and  <code>   AWS</code>(ofline)
+                </p>
+              
+            </div>
+
+            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+                <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Online Messaging Website </h3>
+                <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
+                    Built with <code>React,Tailwind,Python</code> and  <code> FastAPI </code>
+                </p>
+            </div>
+
+             <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+                <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Sprite Editor </h3>
+                <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
+                    Built in <code>QT Creator</code> with <code>C++</code>
+                </p>
+            </div>
+            
+            
+        </div>
+        
+        </div>
+    </section>
+
+    <section class="bg-[#ffffff] h-[80vh]">
+        <div class="h-[75vh] w-[80vw] bg-[#f0f0f0] mx-auto rounded-2xl">
           <div class="swiper mySwiper h-full">
             <div class="swiper-wrapper  items-center" id="slide-container">
               <!-- Cards will be injected here -->
@@ -52,49 +219,54 @@
         </div>
         </section>
 
-        <section class="p-5">
-          <button id="tabButton" class="bg-[#f3e7d0] ml-[10vw] px-4 py-2 rounded hover:bg-[#c8fbbd] focus:outline-none w-64 text-center">
-             More About Me 
-           </button>
-          <div  id = "tabContent" class ='h-[75vh] mt-2 p-4 hidden'>
-              <p>
-                  under construction :\ 
-              </p>
-          </div>
-        </section>    
-    </main>
-
-    <footer class="bg-[#c09180] h-[20vh] ">
-      <div class = "pl-[15vw]"> 
-        <div class ="text-xl pt-5 border-b-2 inline-block"> 
-            Contact Me 
-        </div>
-         
-        <div class = 'flex flex-col '>
+    <footer class="bg-[#dee4ec] h-[40vh] ">
+        <div class="ml-[10%] pt-[5%]">
+            <h3 class="text-4xl"> Contact me </h3>
+            
+            <div class = 'flex flex-col pt-[2%] text-xl pl-[1%] gap-1'>
             <a href="&#x6D;&#x61;ilto&#58;olivi&#x61;m&#x61;tv&#x61;n&#64;gmail&#46;com" class="hover:underline">Email Me</a>
         
             <a href="https://www.linkedin.com/in/olivia-matvejeva-63b29629a/"class="hover:underline">LinkedIn</a>
 
             <a href="https://github.com/omatvejeva" class="hover:underline"> Github</a>
 
-            <a href="files/Olivia Matvejeva Resume (1).pdf" download="Olivia Matvejeva Resume" class = "hover:underline"> 
+            <a href="files/Resume ATS copy.pdf" download="Olivia Matvejeva Resume" class = "hover:underline"> 
                 Download My Resume 
             </a>
         </div>
-      </div>
+        </div>
     </footer>
+
+
 
  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  <script src="./swiper_script.js"></script>
  
- <script>
-  const tabButton = document.getElementById("tabButton");
-  const tabContent = document.getElementById("tabContent");
+    <script>
+        const uiButton = document.getElementById("ui"); 
+        const codingButton = document.getElementById("coding"); 
 
-  tabButton.addEventListener("click", () => {
-    tabContent.classList.toggle("hidden"); 
-  });
-</script>
-   
-</body>
-</html> 
+        uiButton.addEventListener("click", () =>{
+            uiSection.classList.remove("hidden"); 
+            codingSection.classList.add("hidden"); 
+            
+        }); 
+
+        codingButton.addEventListener("click", () =>{
+            codingSection.classList.remove("hidden"); 
+            uiSection.classList.add("hidden"); 
+        }); 
+
+        const portfolioRedesignButton = document.getElementById("portfolioRedesign");
+        const fullRedesignSection = document.getElementById("fullRedesign");
+
+        portfolioRedesignButton.addEventListener("click", () => {
+            fullRedesignSection.classList.toggle("hidden"); 
+        });
+
+
+    </script>
+
+
+    </body>
+</html>

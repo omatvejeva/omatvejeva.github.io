@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olivia Matvejeva</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="icon" href="files/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    
+    <main>
+        <section > 
+        <div class = 'bg-[#fdf0d5] h-[75vh] w-screen '> 
+          <div class="flex flex-col  items-center justify-center flex-wrap "> 
+            <h3 style="text-align: center;" class="text-m text-center mt-8 mb-8 " >
+            <b class="font-mono text-2xl">Hello </b> <br> My Name is <br> <span class="font-mono text-lg">Olivia Matvejeva</span>
+            </h3>
+            <img style="width: 30vh; max-height: 30vh;" class ="" src ="files/Profile_Picture.png" alt='profile picture' > 
+           <div style="width: 50vw; height: 25vh;" class="bg-[#fff9ed] rounded-2xl overflow-scroll text-gray-500 mt-2 p-4"> 
+            I am an aspiring UI/UX Developer and a junior student at the University of Utah, pursuing a degree in Software Development with minors in Design and Art Technology. I focus on creating a seamless and pleasant experience in technology.  
+            This portfolio is to show off both personal passion projects and school work, highlighting the skills I have learned.
+            <br> Find my contact and resume below
+            </div>
+          </div>  
+        </div>
+        </section>
+        <div class="flex justify-center items-center bg-blue-400 ">
+        <a href="/" class="text-3xl  rounded-2xl px-6 py-3 shadow-md hover:underline">
+             Go back
+        </a>
+        </div>
+
+<!-- test cards here -->
+
+        <div class="sticky top-0 z-50 bg-[#e3c6a0] flex flex-row p-5 space-x-3 w-[80vw] mx-auto rounded-full mt-8 mb-8">
+          <button id="GoToStatic" class = "hover:underline hover:bg-[#f7ecdc] hover:rounded-full">Static Designs</button>
+          <button id="GoToUI" class = "hover:underline">UI/UX</button>
+          <button id="GoToCase" class = "hover:underline">Case Studies</button>
+          <button id="GoToCoding" class="font-mono hover:bg-[#98acd0] hover:underline hover:rounded-full ">Coding</button>
+        </div>
+
+        <section>
+        <div class="h-[75vh] w-[80vw] bg-[#f7ecdc] mx-auto rounded-2xl">
+          <div class="swiper mySwiper h-full">
+            <div class="swiper-wrapper  items-center" id="slide-container">
+              <!-- Cards will be injected here -->
+            </div>
+            <!-- Swiper navigation --> 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> 
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        </section>
+
+        <section class="p-5">
+          <button id="tabButton" class="bg-[#f3e7d0] ml-[10vw] px-4 py-2 rounded hover:bg-[#c8fbbd] focus:outline-none w-64 text-center">
+             More About Me 
+           </button>
+          <div  id = "tabContent" class ='h-[75vh] mt-2 p-4 hidden'>
+              <p>
+                  under construction :\ 
+              </p>
+          </div>
+        </section>    
+    </main>
+
+    <footer class="bg-[#c09180] h-[20vh] ">
+      <div class = "pl-[15vw]"> 
+        <div class ="text-xl pt-5 border-b-2 inline-block"> 
+            Contact Me 
+        </div>
+         
+        <div class = 'flex flex-col '>
+            <a href="&#x6D;&#x61;ilto&#58;olivi&#x61;m&#x61;tv&#x61;n&#64;gmail&#46;com" class="hover:underline">Email Me</a>
+        
+            <a href="https://www.linkedin.com/in/olivia-matvejeva-63b29629a/"class="hover:underline">LinkedIn</a>
+
+            <a href="https://github.com/omatvejeva" class="hover:underline"> Github</a>
+
+            <a href="files/Olivia Matvejeva Resume (1).pdf" download="Olivia Matvejeva Resume" class = "hover:underline"> 
+                Download My Resume 
+            </a>
+        </div>
+      </div>
+    </footer>
+
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+ <script src="./swiper_script.js"></script>
+ 
+ <script>
+  const tabButton = document.getElementById("tabButton");
+  const tabContent = document.getElementById("tabContent");
+
+  tabButton.addEventListener("click", () => {
+    tabContent.classList.toggle("hidden"); 
+  });
+</script>
+   
+</body>
+</html> 

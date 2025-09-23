@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Olivia Matvejeva</title>
     <link rel="stylesheet" href="dist/styles.css">
-    <link rel="icon" href="files/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="files/favicon new.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>
   <body>
     <section>
-        <div class = 'bg-[#f3f2f2] h-[75vh] w-screen '> 
+        <div class = 'bg-[#faf9f9] h-[75vh] w-screen '> 
         <div class="flex flex-col   "> 
             <h1 class = 'text-[clamp(3rem,8vw,8rem)] font-bold mt-[5rem] ml-[10%]'>
                 OLIVIA <br>  MATVEJEVA
             </h1>
             <!-- add cover photo with prof. headshot -->
-           <div style="width: 48vw; height: 20vh;" class="bg-[#ebebeb] rounded-2xl overflow-scroll text-gray-500 mt-2 p-4  ml-[11%]"> 
+           <div style="width: 48vw; height: 20vh;" class="bg-[#dddddd] rounded-2xl overflow-scroll text-gray-500 mt-2 p-4  ml-[11%]"> 
             I am an aspiring UI/UX Developer and a junior student at the University of Utah, pursuing a degree in Software Development with minors in Design and Art Technology. I focus on creating a seamless and pleasant experience in technology.  
             This portfolio is to show off both personal passion projects and school work, highlighting the skills I have learned.
             <br> Find my contact and resume below
@@ -70,7 +70,7 @@
     </section>
 
     <section>
-        <div class="bg-[#ffffff] h-screen w-screen" > 
+        <div class="bg-[#faf9f9] h-screen w-screen" > 
         <div class="flex flex-row justify-center items-center">
 
             <button id="ui" class="bg-[#f0afff] p-2 rounded-2xl m-4 text-2xl"> 
@@ -146,7 +146,7 @@
                          there filing in sections and styling as needed. 
                         </p>
                     </div>
-                    
+                    <button id="fullRedesignClose" class="p-1 bg-[#d7e0ec] rounded-2xl mb-4 text-lg"  > close </button>
 
                 </div>
 
@@ -173,7 +173,9 @@
                 <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Spreadsheet Application </h3>
                 <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
                     Built with <code> C# </code> and <code>  MAUI </code> GUI 
+
                 </p>
+
                 
             </div>
 
@@ -205,7 +207,7 @@
         </div>
     </section>
 
-    <section class="bg-[#ffffff] h-[80vh]">
+    <section class="bg-[#faf9f9] h-[80vh]">
         <div class="h-[75vh] w-[80vw] bg-[#f0f0f0] mx-auto rounded-2xl">
           <div class="swiper mySwiper h-full">
             <div class="swiper-wrapper  items-center" id="slide-container">
@@ -259,10 +261,14 @@
 
         const portfolioRedesignButton = document.getElementById("portfolioRedesign");
         const fullRedesignSection = document.getElementById("fullRedesign");
+        const fullRedesignCloseSection = document.getElementById("fullRedesignClose")
 
         portfolioRedesignButton.addEventListener("click", () => {
             fullRedesignSection.classList.toggle("hidden"); 
         });
+        fullRedesignCloseSection.addEventListener("click", ()=> {
+            fullRedesignSection.classList.toggle("hidden"); 
+    }); 
 
 
     </script>

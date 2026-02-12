@@ -12,11 +12,16 @@
   <body>
     <section>
         <div class = 'bg-[#faf9f9] h-[75vh] w-screen '> 
-        <div class="flex flex-col   "> 
+        <div class="flex flex-col  "> 
             <h1 class = 'text-[clamp(3rem,8vw,8rem)] font-bold mt-[5rem] ml-[10%]'>
                 OLIVIA <br>  MATVEJEVA
             </h1>
-            <!-- add cover photo with prof. headshot -->
+
+            <!-- <div class="title-box" style=" height: 50vh; overflow: hidden;  position: relative; ">
+              <h1 class="text-[clamp(3rem,8vw,8rem)] font-bold mt-[5rem]"
+              style="position: absolute; left:-3.4%; "> OLIVIA <br> MATVEJEVA </h1> 
+            </div> -->
+
            <div style="width: 48vw; height: 20vh;" class="bg-[#dddddd] rounded-2xl overflow-scroll text-gray-500 mt-2 p-4  ml-[11%]"> 
             I am an aspiring UI/UX Developer and a junior student at the University of Utah, pursuing a degree in Software Development with minors in Design and Art Technology. I focus on creating a seamless and pleasant experience in technology.  
             This portfolio is to show off both personal passion projects and school work, highlighting the skills I have learned.
@@ -80,101 +85,44 @@
                  Coding </button>
         </div>
             
-        <div id="uiSection" class="bg-[#f0c4ff] w-[85vw] h-[80%] mx-auto rounded-2xl overflow-auto">
-           <div class="bg-[#ffffff] shadow-lg  w-[95%] h-[50%] my-[3%] mx-auto rounded-3xl">
-            <p class="pl-[3%] pt-[2%] font-bold text-xl"> 2025</p>
-            <h3 class="pl-[3%] pt-[1%] text-4xl font-semibold">
-               Portfolio Redesign 
-            </h3>
-           <p class="pl-[3%] pt-[5%]  text-gray-600">
+        <div id="uiSection" class="bg-[#f0c4ff] w-[85vw] h-[80%]  mx-auto rounded-3xl overflow-auto" style="padding-left: 3%; padding-right: 3%;">
+
+        <details class=" bg-[#ffffff]  shadow-lg  my-[3%]  rounded-3xl overflow-auto border border-transparent open:border-black/10 open:bg-gray-100 " >
+
+        <summary class="p-4 pb-8 list-none [&::-webkit-details-marker]:hidden text-xl  font-semibold text-gray-900 select-none">
+            <p class="pl-[3%] pt-[2%] font-bold text-xl">2025-2026</p>
+        
+            <p class="pl-[3%] pt-[1%] text-4xl font-semibold">Portfolio Redesign </p>
+            <p  class="pl-[3%] pt-[5%]  text-gray-600 hover:text-blue-500" >
                 Redesigning my portfolio and what I learned in the process 
-           </p>
-           <button id="portfolioRedesign" style="margin-left: 3%; padding: 1%; margin-top: 1%; margin-bottom: 1%;" class=" bg-[#d7e0ec]   rounded-2xl "> learn more </button>
-           <div id="fullRedesign" class=" bg-white hidden ">
-               
-                <div class="flex flex-col ">
+            </p>
+        </summary>
+        <div id="portfolio-placeholder"> </div>
+        </details>
+            
+        <details class=" bg-[#ffffff] shadow-lg my-[3%] rounded-3xl overflow-auto border border-transparent open:border-black/10 open:bg-gray-100 " >
 
-                    <h3 style="padding-left: 5%; padding-top: 3%; padding-bottom: 3%;" class="text-xl text-black"> 
-                        Phase 0: Talking to a Design Professor </h3>
-                        <a style="padding-left: 5%; padding-bottom: 1%;" class="text-gray-500 text-xl hover:underline" href="old_design.html">Old Design </a>
-                    <p style="padding-left: 5%; padding-right: 10%; padding-bottom: 5%;"class=" text-gray-600"> 
-                        Upon creating my first iteration of this portfolio and proudly showing it off to my friends 
-                        and a few professors, I showed it to my design professor and she gave me some hard advice 
-                        that I needed to hear. She was impressed that I had coded it myself but she said that it 
-                        was average and ok for a student. This did not feel nice in the moment but I did need to 
-                        hear that. I got some recommendations and she talked me through what would make a better UI/UX portfolio. 
+        <summary class="p-4 pb-8 list-none [&::-webkit-details-marker]:hidden text-xl  font-semibold text-gray-900 select-none">
+            <p class="pl-[3%] pt-[2%] font-bold text-xl">2025</p>
+        
+            <p class="pl-[3%] pt-[1%] text-4xl font-semibold">Hypotheical: FreshBaked </p>
+            <!-- <p  class="pl-[3%] pt-[5%]  text-gray-600">
+            Helping solve a pain point in baking  -->
+            <div class="pl-[3%] pt-[1%] "> Uploading Work</div>
+            </p>
+        </summary>
+       <!--  <div id="freshbaked-placeholder"> </div> --> 
+         
 
-                    </p>
-                    <div class="flex flex-row">
-                        <img src="files/Research.jpg" alt="Phase 1 Research other portfolios" 
-                        style="padding-left: 5%;"
-                        class="object-contain max-h-[60vh] w-[40vw] md:w-[80vw] border-2 border-black">
-                        
-
-                        <div class="flex flex-col pl-[3%] ">
-                        <h3 class="text-xl text-black"> Phase 1 : Research</h3>
-                        <p  class=" text-gray-600">
-                            Taking the advice and examples I was given as well as finding more examples online,
-                            I sat down and noted what I liked and the aesthetics of the portfolios I looked at.
-                             From there I created a mind map of what I wanted to include in my portfolio. 
-                        </p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-row">
-                     <div class="flex flex-col pl-[3%] pr-[3%] ">
-                        <h3 class="text-xl text-black"> Phase 2 : White Board drawing </h3>
-                        <p class=" text-gray-600">
-                            After I had an idea of the sections I wanted to add into my portfolio,
-                             I drew out a sketch on a whiteboard to better visualize the flow. 
-                        </p>
-                         <h2 class="text-xl text-black pt-[5%] pr-[3%]"> Phase 2.5: Revise </h2>
-                        <p class=" text-gray-600"> Having a whiteboard sketch, I was able to talk to my peers and walk 
-                            through what I was imagining. Their input helped me revise until I felt happy with my idea.
-                        </p>
-                     </div>
-                     <img  style="padding-right: 3%;" src="files/whiteboard.JPG" alt="whiteboard drawing of the layout " class="object-contain max-h-[60vh] w-[40vw] md:w-[80vw] ">
-                    </div>
-
-                    <div style="padding-left: 5%; padding-bottom: 5%; padding-right: 10%;">
-                        
-                       
-                        <h2 class="text-xl text-black"> Phase 3: Coding the First Draft</h2>
-                        <p class=" text-gray-600">
-                        After I had a solid plan of what I was gonna make, all that was left was to code it. 
-                        I opened a new file and started to code. Starting out with a basic framework and from
-                         there filing in sections and styling as needed. 
-                        </p>
-                    </div>
-                     <div style="padding-left: 5%; padding-bottom: 5%; padding-right: 10%;">
-                        
-                       
-                        <h2 class="text-xl text-black"> Next Steps </h2>
-                        <p class=" text-gray-600">
-                       Now that I have completed a first working iteration of my portfolio, I will be circling back to 
-                       talk to my professor again. I know this isn't the end and I will need to make changes. 
-                       My plan moving forward is to gather feedback from several of my professors in different departments as
-                       well as some of my peers to see how I can improve both the design, usability, and user experience of my portfolio. 
-                       <br>
-                      <br>
-                      <span class="text-sm text-gray-500"> If you are reading this and have any recommendations or changes you think would be beneficial, reach out and let me know, my email is in the footer.  
-                      </span>
-                    </p>
-                    </div>
-                    <button id="fullRedesignClose" class="p-1 bg-[#d7e0ec] rounded-2xl mb-4 text-lg"  > close </button>
-
-                </div>
-
-           </div>
-           </div>
-
-           
-           
+        </details>
+            
         </div>
         
-
-        <div id="codingSection" class="bg-[#b8f4c1] hidden  w-[85vw] h-[80%] mx-auto rounded-2xl overflow-auto">
-            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+    
+        <div id="codingSection" class="bg-[#b8f4c1] hidden  w-[85vw] h-[80%] mx-auto  rounded-3xl overflow-auto" style="padding-left: 3%; padding-right: 3%;">
+          
+            <div style = "height: 30%;" class="bg-[#ffffff] shadow-xl   my-[3%]  rounded-3xl">
+               
                 <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Portfolio </h3>
                 <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
                     Built with <code>HTML,Tailwind,</code> and  <code> Javascript </code>
@@ -184,7 +132,7 @@
 
             </div>
 
-            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+            <div style = "height: 30%;" class="bg-[#ffffff] shadow-xl   my-[3%]  rounded-3xl">
                 <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Spreadsheet Application </h3>
                 <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
                     Built with <code> C# </code> and <code>  MAUI </code> GUI 
@@ -194,7 +142,7 @@
                 
             </div>
 
-            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+            <div style = "height: 30%;" class="bg-[#ffffff] shadow-xl   my-[3%]  rounded-3xl">
                 <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Online Classroom Website  </h3>
                 <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
                     Built with <code>HTML,CSS,Python,Django</code> and  <code>   AWS</code>(offline)
@@ -202,14 +150,14 @@
               
             </div>
 
-            <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+            <div style = "height: 30%;" class="bg-[#ffffff] shadow-xl   my-[3%]  rounded-3xl">
                 <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Online Messaging Website </h3>
                 <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
                     Built with <code>React,Tailwind,Python</code> and  <code> FastAPI </code>
                 </p>
             </div>
 
-             <div style = "height: 30%;"class="bg-[#ffffff] shadow-xl w-[95%]  my-[3%] mx-auto rounded-3xl">
+              <div style = "height: 30%;" class="bg-[#ffffff] shadow-xl   my-[3%]  rounded-3xl">
                 <h3 style="padding-left: 5%;" class=" pt-[3%] text-2xl font-semibold"> Sprite Editor </h3>
                 <p style="padding-left: 5%;" class="pt-[3%] text-gray-600 text-lg">
                     Built in <code>QT Creator</code> with <code>C++</code>
@@ -234,7 +182,8 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        </section>
+    </section>
+        
 
     <footer class="bg-[#dee4ec] h-[40vh] ">
         <div class="ml-[10%] pt-[5%]">
@@ -274,20 +223,22 @@
             uiSection.classList.add("hidden"); 
         }); 
 
-        const portfolioRedesignButton = document.getElementById("portfolioRedesign");
-        const fullRedesignSection = document.getElementById("fullRedesign");
-        const fullRedesignCloseSection = document.getElementById("fullRedesignClose")
+        
+        // Function to load HTML content
+        function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                })
+                .catch(error => console.error('Error loading HTML:', error));
+        }
 
-        portfolioRedesignButton.addEventListener("click", () => {
-            fullRedesignSection.classList.toggle("hidden"); 
-        });
-        fullRedesignCloseSection.addEventListener("click", ()=> {
-            fullRedesignSection.classList.toggle("hidden"); 
-    }); 
-
-
+        // Call the function to load header and footer
+        loadHTML('portfolio-placeholder', 'portfolio.html');
+        loadHTML('freshbaked-placeholder', 'freshbaked.html');
     </script>
 
-
+    
     </body>
 </html>
